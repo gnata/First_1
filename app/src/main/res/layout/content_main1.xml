@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MainStyle"
+    android:orientation="vertical"
+    tools:context="com.example.ngoncharova.first_1work.MainActivity1"
+    tools:showIn="@layout/activity_main1">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <RelativeLayout
+            android:id="@+id/lin_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="false"
+                android:text="@string/company"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/in_progress"
+                style="@style/ProgressTVStyle"
+                android:text="@string/in_progress"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/company"
+                android:background="@drawable/shape"
+                android:textColor="@android:color/white"/>
+
+            <View
+                android:id="@+id/divider1"
+                style="@style/Divider"
+                android:layout_below="@id/in_progress"/>
+
+            <TextView
+                android:id="@+id/create_tv"
+                style="@style/TextViewStyle"
+                android:text="@string/create"
+                android:layout_below="@id/divider1"/>
+
+            <TextView
+                android:id="@+id/date_of_create_tv"
+                style="@style/DateCustomStyle"
+                android:text="@string/date_of_create"
+                android:layout_below="@+id/divider1"/>
+
+            <View
+                android:id="@+id/divider2"
+                style="@style/Divider"
+                android:layout_below="@id/create_tv"/>
+
+            <TextView
+                android:id="@+id/registered_tv"
+                style="@style/TextViewStyle"
+                android:text="@string/registered"
+                android:layout_below="@id/divider2"/>
+
+            <TextView
+                android:id="@+id/date_of_registered_tv"
+                style="@style/DateCustomStyle"
+                android:text="@string/date_of_registered"
+                android:layout_below="@id/divider2" />
+
+            <View
+                android:id="@+id/divider3"
+                style="@style/Divider"
+                android:layout_below="@id/registered_tv" />
+
+            <TextView
+                android:id="@+id/solve_to_tv"
+                style="@style/TextViewStyle"
+                android:text="@string/solve_to"
+                android:layout_below="@id/divider3"/>
+            <TextView
+                android:id="@+id/date_solve_to_tv"
+                style="@style/DateCustomStyle"
+                android:text="@string/date_solve_to_tv"
+                android:layout_below="@id/divider3" />
+
+            <View
+                android:id="@+id/divider4"
+                style="@style/Divider"
+                android:layout_below="@id/solve_to_tv"/>
+
+            <TextView
+                android:id="@+id/responsible_tv"
+                style="@style/TextViewStyle"
+                android:text="@string/responsible"
+                android:layout_below="@id/divider4" />
+            <TextView
+                android:id="@+id/responsible_company_tv"
+                style="@style/DateCustomStyle"
+                android:text="Dnipropetrovsk CEC"
+                android:layout_below="@id/divider4"/>
+
+            <View
+                android:id="@+id/divider5"
+                style="@style/Divider"
+                android:layout_below="@id/responsible_tv"/>
+
+            <TextView
+                android:id="@+id/description_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divider5"
+                android:text="@string/description_text"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_large"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="bottom"
+        android:foregroundGravity="bottom"
+        android:scrollbars="horizontal"/>
+
+</LinearLayout>

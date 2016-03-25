@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CE-1257218</string>
+    <string name="action_settings">Settings</string>
+    <string name="in_progress">At work</string>
+    <string name="company">Company</string>
+    <string name="create">Create</string>
+    <string name="date_of_create">February 25, 2016</string>
+    <string name="registered">Registered</string>
+    <string name="date_of_registered">February 26, 2016</string>
+    <string name="solve_to">Decide by</string>
+    <string name="date_solve_to_tv">February 29, 2016</string>
+    <string name="responsible">Responsible</string>
+    <string name="description_text">An opened hatch (next to a billboard).
+The area where 18, 19 trams turn from Donetskoye Highway to Mira Avenue. </string>
+</resources>
