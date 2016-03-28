@@ -133,4 +133,5 @@
         android:foregroundGravity="bottom"
         android:scrollbars="horizontal"/>
 
+    <!-- [Comment] Hardcode -->
 </LinearLayout>

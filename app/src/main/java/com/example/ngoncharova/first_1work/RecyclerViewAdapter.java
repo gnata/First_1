@@ -13,13 +13,13 @@ import com.squareup.picasso.Picasso;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
 
-    private int[] recycle_images;
-    private Context context;
+    private int[] recycle_images; //[Comment] Wrong name. Use google code style
+    private Context context; //[Comment] Wrong name. Use google code style
 
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 
-        public ImageView icon;
+        public ImageView icon; //[Comment] Wrong name and visibility modifier
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -44,7 +44,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         Picasso.with(context)
                 .load(recycle_images[position])
-                .resize(400, 300)
+                .resize(400, 300) //[Comment] Magic numbers
                 .into(holder.icon);
     }
 
@@ -55,6 +55,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public void onAttachedToRecyclerView(RecyclerView recyclerView) {
-        super.onAttachedToRecyclerView(recyclerView);
+        super.onAttachedToRecyclerView(recyclerView); //[Comment] Unnecessary method
     }
 }

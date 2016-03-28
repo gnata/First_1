@@ -11,16 +11,17 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+//[Comment] Wrong toolbar and status bar colors
 public class MainActivity1 extends AppCompatActivity {
 
     private RecyclerView.Adapter adapter;
     private RecyclerView recyclerView;
-    private RecyclerView.LayoutManager layoutManager;
+    private RecyclerView.LayoutManager layoutManager; //[Comment] All these objects should be local
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main1);
+        setContentView(R.layout.activity_main1); //[Comment] Don't use numbers in id names
 
         //create toolbar
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -39,7 +40,7 @@ public class MainActivity1 extends AppCompatActivity {
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(Menu menu) { //[Comment] Unnecessary method. You don't have menu
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main_activity1, menu);
         return true;
